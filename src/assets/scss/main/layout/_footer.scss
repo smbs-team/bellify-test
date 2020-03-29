@@ -60,7 +60,7 @@
         border: 1px solid $white;
         color: $white;
         height: 40px;
-        width: 290px;
+        width: $input-width;
         
         margin-bottom: 8px;
         padding-left: 18px;
@@ -74,8 +74,8 @@
     &-inputWrap{
         @include flex-container(row, flex-start, center); 
         flex-wrap: nowrap; 
-        max-width: 290px;
-        width: 290px;         
+        max-width: $input-width;
+        width: $input-width;         
     }
 
     &-submit{
@@ -145,7 +145,7 @@
         
         &-input{            
             margin-bottom: 0;
-            width: calc(290px * 0.68);
+            width: calc(#{$input-width} * 0.68);
 
             &:first-of-type{
                 margin-right: 18px;
@@ -153,13 +153,17 @@
         }
         
         &-inputWrap{
-            width: calc(290px * 0.68);
+            width: calc(#{$input-width} * 0.68);
+        }
+
+        &-creditCards{
+            @include flex-container(row, flex-end, center);
         }
     }
 
     @include media-breakpoint-up(xl){
         &-input{
-            width: 290px
+            width: $input-width
         }
     }
 }

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const TopbarHeader = (props) => {
+const TopbarHeader = () => {
 
 	return (
 		<div className="Header-topbar">

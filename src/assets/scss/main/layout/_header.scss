@@ -1,5 +1,5 @@
 .Header {
-    background-color: $black;
+    background-color: $secondary-color;
     &-btnBooking {
         border-radius: 0;
     }
@@ -34,7 +34,7 @@
         }
     }
     &-topbar {
-        background: #000;
+        background: $black;
         color: $font-color;
         height: auto;
         line-height: 40px;

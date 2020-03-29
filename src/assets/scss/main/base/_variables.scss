@@ -1,5 +1,15 @@
 //Colors
 $black: #000000;
 $light-black: #313131;
-$separator: #a191b2;
-$white: #ffffff;
+$primary-color: #A191B2;
+$secondary-color: $light-black;
+$separator: $primary-color;
+$white: #FFFFFF;
+
+$font-color: $white;
+
+$border-header: #707070;
+
+$btn-color: (
+    purple: $primary-color
+);

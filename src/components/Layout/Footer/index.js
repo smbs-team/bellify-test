@@ -13,8 +13,7 @@ export default function Footer() {
     return (
         <Fragment>
             <div className="Footer">
-                <div className="Footer-wrapper">
-                    <div className="container-fluid">
+                    <div className="container">
                         <div className="Footer-info">
                             <div className="row">
                                 <div className="col">
@@ -112,10 +111,9 @@ export default function Footer() {
                                 </button>
                             </form>
                         </div>
-                    </div>            
                 </div>
                 <div className="Footer-bottomBar">
-                    <div className="Footer-wrapper Footer-bottomBar-wrapper">
+                    <div className="Footer-bottomBar-wrapper container">
                         <span className="Footer-copy">&copy; 2019 Bellify. All rights reserved.</span>
                         <p className="Footer-powered mb-0">Work done by <img src={beonshop_logo} alt="Beonshop" className="Footer-beonshop"/></p>
                     </div>

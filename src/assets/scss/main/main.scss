@@ -1,9 +1,18 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
-@import '_variables';
+//Base styles
+@import './base/fonts';
+@import './base/reset';
+@import './base/variables';
+@import './base/mixins';
+@import './base/common';
+
+//Components
+@import './components/footer';
 
 //Base
 @import 'base/buttons';
 
 //Layout
 @import 'layout/header';
+

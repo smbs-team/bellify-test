@@ -1,0 +1,43 @@
+.Header {
+    background-color: $black;
+    &-btnBooking {
+        border-radius: 0;
+    }
+    &-mainMenu {
+        border-bottom: solid 1px $border-header;
+        .navbar {
+            padding-bottom: 0;
+            padding-top: 0;
+            min-height: 75px;
+        }
+        .nav-item {
+            text-align: center;
+            min-width: 124px;
+        }
+        .nav-link {
+            color: $white !important;
+        }
+        .dropdown-menu.dropdown-menu-right.show {
+            background-color: $black;
+            border-radius: 0;
+            margin-left: auto;
+            margin-right: auto;
+            left: 50%;
+            transform: translate(-50%);
+            button {
+                color: $white;
+                height: 48px;
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    &-topbar {
+        background: #000;
+        color: $font-color;
+        height: auto;
+        line-height: 40px;
+        text-align: center;
+    }
+}

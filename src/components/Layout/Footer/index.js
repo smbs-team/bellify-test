@@ -8,6 +8,7 @@ import facebook_icon from '../../../assets/images/facebook_icon.png';
 import instagram_icon from '../../../assets/images/instagram_icon.png';
 import twitter_icon from '../../../assets/images/twitter_icon.png';
 import beonshop_logo from '../../../assets/images/beonshop_logo.png';
+import credit_cards_logo from '../../../assets/images/credit_cards_logo.png';
 
 export default function Footer() {
     return (
@@ -16,7 +17,7 @@ export default function Footer() {
                     <div className="container">
                         <div className="Footer-info">
                             <div className="row">
-                                <div className="col">
+                                <div className="col-xs-12 col-md-4 col-lg Footer-col">
                                     <h5 className="block-title Footer-title">App</h5>
                                     <a href="#" className="Footer-playstore">
                                         <img src={playstore} alt="Download our app on Google Playstore"/>
@@ -25,7 +26,7 @@ export default function Footer() {
                                         <img src={apple_store} alt="Download our app on Apple Store"/>
                                     </a>
                                 </div>
-                                <div className="col">
+                                <div className="col-xs-12 col-md-4 col-lg Footer-col">
                                     <h5 className="block-title Footer-title">Tienda</h5>
                                     <ul className="Footer-links">
                                         <li className="Footer-link">
@@ -45,7 +46,7 @@ export default function Footer() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col">
+                                <div className="col-xs-12 col-md-4 col-lg Footer-col">
                                     <h5 className="block-title Footer-title">Sobre Bellify</h5>
                                     <ul className="Footer-links">
                                         <li className="Footer-link">
@@ -68,7 +69,7 @@ export default function Footer() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col">
+                                <div className="col-xs-12 col-md-4 col-lg Footer-col">
                                     <h5 className="block-title Footer-title">Ayuda</h5>
                                     <ul className="Footer-links">
                                         <li className="Footer-link">
@@ -85,7 +86,7 @@ export default function Footer() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col">
+                                <div className="col-xs-12 col-md-4 col-lg Footer-col">
                                     <h5 className="block-title Footer-title">Siguenos</h5>
                                     <div className="Footer-social">
                                         <a href="#" className="Footer-social-link">
@@ -100,17 +101,26 @@ export default function Footer() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Footer-newsletter">
-                            <h5 className="block-title Footer-newsletter-title">Newsletter</h5>
-                            <form action="" className="Footer-form flex-row-start">
-                                <input type="text" name="name" id="name" className="Footer-input" placeholder="Nombre" />
-                                <input type="text" name="email" id="email" className="Footer-input" placeholder="Correo electrónico" />
-                                <button type="submit" className="Footer-submit">
-                                    <img src={arrow_right} className="Footer-submit-icon"/>
-                                </button>
-                            </form>
-                        </div>
+                        </div>  
+                        <div className="row">
+                            <div className="col-12 col-lg-8">
+                                <form action="" className="Footer-newsletter flex-row-start">
+                                    <h5 className="block-title Footer-newsletter-title">Newsletter</h5>
+                                    <input type="text" name="name" id="name" className="Footer-input" placeholder="Nombre" />
+                                    <div className="Footer-inputWrap">
+                                        <input type="text" name="email" id="email" className="Footer-input withIcon" placeholder="Correo electrónico" />
+                                        <button type="submit" className="Footer-submit">
+                                            <img src={arrow_right} className="Footer-submit-icon"/>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className="col-12 col-lg-4">
+                                <div className="Footer-creditCards">
+                                    <img src={credit_cards_logo}/>
+                                </div>
+                            </div>                            
+                        </div>                      
                 </div>
                 <div className="Footer-bottomBar">
                     <div className="Footer-bottomBar-wrapper container">

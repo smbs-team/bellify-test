@@ -1,1 +1,9 @@
 @import '~bootstrap/scss/bootstrap.scss';
+
+@import '_variables';
+
+//Base
+@import 'base/buttons';
+
+//Layout
+@import 'layout/header';

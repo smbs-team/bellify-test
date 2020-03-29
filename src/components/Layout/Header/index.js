@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
+import MenuHeader from './MenuHeader';
 
 export default function Header() {
     return (
-        <Fragment>
-            
-        </Fragment>
+        <div className="Header">
+           <MenuHeader />
+        </div>
     );
 }

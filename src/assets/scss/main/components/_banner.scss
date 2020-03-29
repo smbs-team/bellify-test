@@ -1,0 +1,11 @@
+.BannerSection {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 293px;
+    &-title {
+        font-family: $title-fonts;
+        font-weight: bold;
+    }
+}

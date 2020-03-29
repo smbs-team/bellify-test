@@ -1,11 +1,15 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import Banner from '../../components/Banner';
+import BannerFile from '../../assets/images/banners/store-banner.jpg';
+import ShopList from '../../components/ShopList';
+import Breadcrumb from '../../components/Breadcrumb';
 
 export default function Home() {
     return (
         <Fragment>
-            <p>Hola mundo</p>
-            <Link to='/shop'>Shop</Link>
+            <Banner fileName={BannerFile} title='Tienda Online'/>
+            <Breadcrumb />
+            <ShopList />
         </Fragment>
     );
 }

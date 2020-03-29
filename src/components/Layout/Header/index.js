@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import MenuHeader from './MenuHeader';
 
 export default function Header() {

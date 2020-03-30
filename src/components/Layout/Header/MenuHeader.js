@@ -30,9 +30,7 @@ const MenuHeader = (props) => {
 			<div className="Header-mainMenu">
 				<Navbar expand="xl" dark>
 					<NavbarBrand href="/">
-						<Link>
-							<img src={Logo} alt=""/>
-						</Link>
+						<img src={Logo} alt="" className="Header-logo"/>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isOpen} navbar>
@@ -52,7 +50,7 @@ const MenuHeader = (props) => {
 										Uñas
 									</DropdownItem>
 									<DropdownItem>
-										Estetica
+										Estética
 									</DropdownItem>
 								</DropdownMenu>
 							</UncontrolledDropdown>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 const ShopItem = (props) => {
     return (
         <div className="ShopItem">
-            <Link to={'/product'}>
+            <Link to={`/product/${props.id || 1}`}>
                 <div className="ShopItem-image">
                     <img src={props.fileName} alt=""/>
                 </div>
@@ -18,6 +18,7 @@ const ShopItem = (props) => {
 }
 
 ShopItem.propTypes = {
+    id: PropTypes.string,
     fileName: PropTypes.string,
     title: PropTypes.string,
     price: PropTypes.string

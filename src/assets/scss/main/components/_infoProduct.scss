@@ -28,14 +28,6 @@
         @include flex-container(row, center, center);
     }
 
-    // &-middle, &-quantity{
-    //     @include flex-container(row, flex-start, center);
-    // }
-
-    // &-share{
-    //     @include flex-container(row, flex-end, center);        
-    // }
-
     &-social{        
         padding-left: 15px;
         padding-right: 15px;
@@ -127,6 +119,7 @@
 
     @include media-breakpoint-up(xl){
         margin: 0;
+        margin-bottom: 50px;
 
         &-middle, &-quantity{
             @include flex-container(row, flex-start, center);

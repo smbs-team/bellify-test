@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { Fragment, useState } from 'react';
 import twitter_icon from '../../assets/images/icons/twitter_logo.svg';
 import facebook_icon from '../../assets/images/icons/facebook_logo.svg';
 import instagram_icon from '../../assets/images/icons/instagram_logo.svg';
@@ -19,7 +19,7 @@ const InfoProduct = () => {
     }
 
     return (
-        <div className="Product">
+        <div className="Product space-separator">
             <h1 className="Product-title">Lorem Ipsum</h1>
             <span className="Product-ref text-small">Núm. Ref: 223344</span>
             <p className="Product-description">

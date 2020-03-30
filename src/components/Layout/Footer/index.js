@@ -87,7 +87,7 @@ export default function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-xs-12 col-md-4 col-lg Footer-col">
+                            <div className="col-xs-12 col-md-4 col-lg-2 Footer-col Footer-col-social">
                                 <h5 className="block-title Footer-title">Siguenos</h5>
                                 <div className="Footer-social">
                                     <Link to="#" className="Footer-social-link">

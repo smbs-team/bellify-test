@@ -18,6 +18,7 @@ import TopbarHeader from './TopbarHeader';
 import Logo from '../../../assets/images/logo.png';
 import shop_bag from '../../../assets/images/icons/shop-bag.svg';
 import heart from '../../../assets/images/icons/heart.svg';
+import { Link } from 'react-router-dom';
 
 const MenuHeader = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,9 @@ const MenuHeader = (props) => {
 			<div className="Header-mainMenu">
 				<Navbar expand="xl" dark>
 					<NavbarBrand href="/">
-						<NavLink>
+						<Link>
 							<img src={Logo} alt=""/>
-						</NavLink>
+						</Link>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isOpen} navbar>
@@ -57,25 +58,21 @@ const MenuHeader = (props) => {
 								</DropdownMenu>
 							</UncontrolledDropdown>
 							<NavItem>
-								<NavLink>Productos</NavLink>
+								<Link className="nav-link" to="">Productos</Link>
 							</NavItem>
 							<NavItem>
-								<NavLink>Bodas</NavLink>
+								<Link className="nav-link" to="">Bodas</Link>
 							</NavItem>
 							<NavItem>
-								<NavLink>Estilos</NavLink>
+								<Link className="nav-link" to="">Estilos</Link>
 							</NavItem>
 							<NavItem>
-								<NavLink>Blog</NavLink>
+								<Link className="nav-link" to="">Blog</Link>
 							</NavItem>
 						</Nav>
+						<Link className="d-block text-center nav-link">Iniciar Sesión</Link>
+						<Link className="btn btn-purple Header-btnBooking">Reserva</Link>
 						<Nav navbar>
-							<NavItem>
-								<NavLink>Iniciar Sesión</NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink className="btn btn-purple Header-btnBooking">Reserva</NavLink>
-							</NavItem>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
 									Es
@@ -90,12 +87,14 @@ const MenuHeader = (props) => {
 								</DropdownMenu>
 							</UncontrolledDropdown>
 						</Nav>
-						<NavLink>
-							<img src={heart} alt=""/>
-						</NavLink>
-						<NavLink>
-							<img src={shop_bag} alt=""/>
-						</NavLink>
+						<div className="text-center">
+							<Link className="nav-link icon" to="">
+								<img src={heart} alt=""/>
+							</Link>
+							<Link className="nav-link icon" to="">
+								<img src={shop_bag} alt=""/>
+							</Link>
+						</div>
 					</Collapse>
 				</Navbar>
 			</div>

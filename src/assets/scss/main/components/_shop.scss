@@ -7,9 +7,17 @@
         justify-content: center;
         min-height: 325px;
         width: 100%;
+        img {
+            @include media-breakpoint-up(xl) { 
+                max-height: 252px;
+                width: auto;
+            }
+            width: 100%;
+        }
     }
     &-title {
         margin-top: 26px;
+        color: $black;
         &:after {
             content: attr(data-price);
             display: block;

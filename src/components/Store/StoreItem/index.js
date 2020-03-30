@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ShopItem = (props) => {
     return (
         <div className="ShopItem">
-            <div className="ShopItem-image">
-                <img src={props.fileName} alt="" width="100%"/>
-            </div>
-            <div className="ShopItem-title" data-price={props.price}>
-                <h2>{props.title}</h2>
-            </div>
+            <Link to={'/product'}>
+                <div className="ShopItem-image">
+                    <img src={props.fileName} alt=""/>
+                </div>
+                <div className="ShopItem-title" data-price={props.price}>
+                    <h2>{props.title}</h2>
+                </div>
+            </Link>
         </div>
     );
 }

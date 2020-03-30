@@ -1,7 +1,15 @@
 .Header {
     background-color: $secondary-color;
     &-btnBooking {
+        align-items: center;
         border-radius: 0;
+        color: $white;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-up(xl) { 
+            width: 182px;
+        }
     }
     &-mainMenu {
         border-bottom: solid 1px $border-header;
@@ -16,21 +24,31 @@
         }
         .nav-link {
             color: $white !important;
+            &.icon {
+                display: inline-block;
+                text-align: center;
+                width: auto;
+            }
         }
         .dropdown-menu.dropdown-menu-right.show {
-            background-color: $black;
+            background-color: $secondary-color;
             border-radius: 0;
             margin-left: auto;
             margin-right: auto;
-            left: 50%;
-            transform: translate(-50%);
+            @include media-breakpoint-up(xl) { 
+                left: 50%;
+                transform: translate(-50%);
+            }
             button {
                 color: $white;
                 height: 48px;
                 &:hover {
-                    background-color: $primary-color;
+                    background-color: $black;
                 }
             }
+        }
+        .dropdown-toggle::after { 
+            margin-left: 1.225em;
         }
     }
     &-topbar {

@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Preview from './preview';
 
-// import productMain from '../../../assets/images/Products/product_1_1.png';
-// import thumb_1 from '../../../assets/images/Products/product_1_2.png';
-// import thumb_2 from '../../../assets/images/Products/product_1_3.png';
-
 const ImageProduct = (props) => {
     const renderThumbs = () => {
         return props.thumbnails.map((t) => (

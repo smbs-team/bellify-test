@@ -1,5 +1,22 @@
 .btn {
     &-purple {
         background-color: map-get($btn-color, purple);
+    }    
+    
+    &-action{
+        border: 1px solid $primary-color;
+        border-radius: 50px;
+        padding: 15px;
+        text-align: center;
+        
+        &.primary{
+            background-color: map-get($btn-color, purple);
+            color: $white;
+        }
+
+        &.transparent{
+            background-color: transparent;
+            color: $primary-color;
+        }
     }
 }

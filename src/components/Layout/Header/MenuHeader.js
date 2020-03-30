@@ -50,7 +50,7 @@ const MenuHeader = (props) => {
 										Uñas
 									</DropdownItem>
 									<DropdownItem>
-										Estetica
+										Estética
 									</DropdownItem>
 								</DropdownMenu>
 							</UncontrolledDropdown>

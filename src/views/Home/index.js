@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Banner from '../../components/Banner';
 import BannerFile from '../../assets/images/banners/store-banner.jpg';
-import ShopList from '../../components/ShopList';
+import ListStore from '../../components/Store';
 import Breadcrumb from '../../components/Breadcrumb';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         <Fragment>
             <Banner fileName={BannerFile} title='Tienda Online'/>
             <Breadcrumb />
-            <ShopList />
+            <ListStore />
         </Fragment>
     );
 }

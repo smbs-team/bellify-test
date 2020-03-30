@@ -1,8 +1,8 @@
 import React from 'react';
-import ListShopList from './ListShopList';
+import ListStore from './ListStore';
 
 export default function ShopList() {
     return (
-        <ListShopList />    
+        <ListStore />    
     );
 }

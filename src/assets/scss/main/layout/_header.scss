@@ -32,21 +32,25 @@
             }
         }
         .dropdown-menu.dropdown-menu-right.show {
-            background-color: $secondary-color;
+            background-color: $black;
             border-radius: 0;
             margin-left: auto;
             margin-right: auto;
+            padding-bottom: 18px;
             @include media-breakpoint-up(xl) { 
                 left: 50%;
                 transform: translate(-50%);
             }
             button {
+                background-color: $black;
                 color: $white;
+                cursor: pointer;
                 height: 48px;
+                font-size: 14px;
                 font-weight: 300;
                 text-align: center;
                 &:hover {
-                    background-color: $black;
+                    background-color: $primary-color;
                 }
             }
         }

@@ -1,0 +1,31 @@
+.ImageProduct{
+    max-width: 600px;
+    width: 100%;
+
+    &-main{
+        background-color: $default-bg;
+        display: block;
+        width: 100%;
+    }
+
+    &-thumbs{
+        @include flex-container(row, flex-start, center);
+        padding-top: 1rem;
+    }
+    
+    &-thumb{
+        @include flex-container();
+
+        background-color: $default-bg;
+        flex-grow: 0;
+
+        margin-right: 1rem;
+        
+        height: 122px;
+        width: 122px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

@@ -24,10 +24,10 @@ class DetailProduct extends PureComponent {
         return (
             <div className="container space-separator">
                 <div className="row">                    
-                    <div className="col-12 col-md-6 col-xl-5 offset-xl-1">
+                    <div className="col-12 col-lg-6 col-xl-5 offset-xl-1">
                         <ImageProduct thumbnails={this.state.thumbnails} fileName={productMain} />
                     </div>
-                    <div className="col-12 col-md-6 col-xl-5">
+                    <div className="col-12 col-lg-6 col-xl-5">
                         <InfoProduct />
                     </div>
                 </div>

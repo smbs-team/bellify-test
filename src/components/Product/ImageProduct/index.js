@@ -12,7 +12,7 @@ const ImageProduct = (props) => {
     return (
         <div className="ImageProduct">
             <div className="ImageProduct-main">
-                <img src={props.fileName} alt=""/>                
+                <img className="img-fluid" src={props.fileName} alt=""/>                
             </div>            
             <div className="ImageProduct-thumbs">
                 { renderThumbs() }

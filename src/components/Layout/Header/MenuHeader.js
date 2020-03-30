@@ -28,7 +28,7 @@ const MenuHeader = (props) => {
 		<div>
 			<TopbarHeader />
 			<div className="Header-mainMenu">
-				<Navbar expand="md" dark>
+				<Navbar expand="xl" dark>
 					<NavbarBrand href="/">
 						<NavLink>
 							<img src={Logo} alt=""/>

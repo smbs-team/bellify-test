@@ -8,11 +8,14 @@
 @import './base/common';
 
 //Components
+@import 'components/banner';
+@import 'components/breadcrumb';
+@import 'components/shop';
 
 //Base
 @import 'base/buttons';
 
 //Layout
 @import 'layout/header';
-@import './layout/footer';
+@import 'layout/footer';
 

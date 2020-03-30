@@ -12,9 +12,14 @@
 }
 
 .flex-row-start{
-    @include flex-container(row, start, center);
+    @include flex-container(row, flex-start, center);
 }
 
 .flex-row-spaced{
     @include flex-container(row, space-between, center);
+}
+
+.space-separator {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }

@@ -1,0 +1,11 @@
+.breadcrumb-custom {
+    a {
+        color: initial;
+    }
+    ol {
+        background-color: transparent;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: ">";
+    }
+}

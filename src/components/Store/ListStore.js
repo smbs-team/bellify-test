@@ -12,7 +12,7 @@ class ListStore extends PureComponent {
                 <div className="row">
                     {dummyData.map((dd) => {
                         return <div className="col-md-3">
-                            <StoreItem fileName={dd.image} title={dd.name} price={dd.price} />
+                            <StoreItem id={dd.id} fileName={dd.image} title={dd.name} price={dd.price} />
                         </div>
                     })}
                 </div>

@@ -6,8 +6,8 @@
     width: 100%;
 
     &-main{
-        background-color: $default-bg;
-        display: block;
+        @include flex-container(row, center, center);
+        background-color: $default-bg;        
         width: 100%;
     }
 

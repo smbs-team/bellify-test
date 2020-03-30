@@ -17,7 +17,7 @@ const ShopItem = (props) => {
 ShopItem.propTypes = {
     fileName: PropTypes.string,
     title: PropTypes.string,
-    price: PropTypes.number
+    price: PropTypes.string
 }
 
 export default ShopItem;

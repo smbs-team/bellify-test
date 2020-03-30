@@ -36,7 +36,7 @@ const MenuHeader = (props) => {
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isOpen} navbar>
-						<Nav className="mr-auto" navbar>
+						<Nav className="m-auto" navbar>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
 									Servicios

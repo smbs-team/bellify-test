@@ -2,4 +2,7 @@
     &-purple {
         background-color: map-get($btn-color, purple);
     }
+    &-rounded {
+        border-radius: 50px;
+    }
 }

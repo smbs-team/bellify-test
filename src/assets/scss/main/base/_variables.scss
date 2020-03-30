@@ -1,5 +1,6 @@
 //Colors
 $black: #000000;
+$default-bg: #EEEEEE;
 $light-black: #313131;
 $primary-color: #A191B2;
 $secondary-color: $light-black;
@@ -16,6 +17,8 @@ $btn-color: (
     purple: $primary-color
 );
 
+//Fonts
 $title-fonts: 'Cormorant Infant', serif;
+
 //Sizes
 $input-width: 290px

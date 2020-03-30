@@ -5,7 +5,7 @@ const ShopItem = (props) => {
     return (
         <div className="ShopItem">
             <div className="ShopItem-image">
-                <img src={props.fileName} alt=""/>
+                <img src={props.fileName} alt="" width="100%"/>
             </div>
             <div className="ShopItem-title" data-price={props.price}>
                 <h2>{props.title}</h2>
@@ -17,7 +17,7 @@ const ShopItem = (props) => {
 ShopItem.propTypes = {
     fileName: PropTypes.string,
     title: PropTypes.string,
-    price: PropTypes.number
+    price: PropTypes.string
 }
 
 export default ShopItem;

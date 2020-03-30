@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ListStore from './ListStore';
+import FilterStore from './FilterStore';
 
 export default function ShopList() {
     return (
-        <ListStore />    
+        <Fragment>
+            <div className="container-fluid">
+                <FilterStore />
+            </div>
+            <ListStore />    
+        </Fragment>
     );
 }

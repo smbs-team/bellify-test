@@ -154,7 +154,15 @@
 
             &:first-of-type{
                 margin-right: 18px;
-            }           
+            }     
+            
+            &::-moz-placeholder, 
+            &::-webkit-input-placeholder,
+            &::placeholder{
+                font-style: italic;
+                font-size: 14px;
+                font-weight: 300;
+            }
         }
         
         &-inputWrap{

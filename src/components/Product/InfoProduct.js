@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import twitter_icon from '../../assets/images/icons/twitter_logo.svg';
 import facebook_icon from '../../assets/images/icons/facebook_logo.svg';
 import instagram_icon from '../../assets/images/icons/instagram_logo.svg';

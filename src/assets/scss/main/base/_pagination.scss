@@ -29,6 +29,10 @@
             padding-right: 72.5px;
             width: auto;
         }
+        &.next{
+            font-size: 18px;
+            font-weight: 500;
+        }
         &.selected {
             @extend %select_hover_pageCustom;
         }

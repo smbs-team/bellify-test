@@ -19,7 +19,7 @@ import shop_bag from '../../../assets/images/icons/shop-bag.svg';
 import heart from '../../../assets/images/icons/heart.svg';
 import { Link } from 'react-router-dom';
 
-const MenuHeader = (props) => {
+const MenuHeader = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggle = () => setIsOpen(!isOpen);
@@ -72,7 +72,7 @@ const MenuHeader = (props) => {
 						<Nav navbar>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
-									Es
+									ES
 								</DropdownToggle>
 								<DropdownMenu right>
 									<DropdownItem>

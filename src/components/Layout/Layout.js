@@ -12,18 +12,20 @@ export default function Layout() {
         <Fragment>
             <Header />
             <Switch>
-            {routes.map((route, idx) => {
-                return route.component ? (
-                <Route
-                    key={idx}
-                    path={route.path}
-                    exact={route.exact}
-                    name={route.name}
-                    render={props => (
-                    <route.component {...props} />
-                    )} />
-                ) : (null);
-            })}
+            <div className="Main">
+                {routes.map((route, idx) => {
+                    return route.component ? (
+                    <Route
+                        key={idx}
+                        path={route.path}
+                        exact={route.exact}
+                        name={route.name}
+                        render={props => (
+                        <route.component {...props} />
+                        )} />
+                    ) : (null);
+                })}
+            </div>
             </Switch>
             <Footer />
         </Fragment>

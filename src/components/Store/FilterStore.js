@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react';
+import colIcon from '../../assets/images/icons/cols.svg';
+import gridIcon from '../../assets/images/icons/grid.svg';
 
 const FilterStore = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +59,16 @@ const FilterStore = () => {
                         <button className="btn btn-purple btn-lg btn-rounded Store-filterButton">Filtrar</button>
                     </div>
                 </div>
+            </div>
+            <div className="Store-viewType-icons">
+                <ul className="Store-viewType-list">
+                    <li className="Store-viewType-item">
+                        <img src={gridIcon} alt=""/>
+                    </li>
+                    <li className="Store-viewType-item">
+                        <img src={colIcon} alt=""/>
+                    </li>
+                </ul>
             </div>
         </Fragment>
     );

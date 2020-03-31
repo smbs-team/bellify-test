@@ -6,7 +6,9 @@ export default function ShopList() {
     return (
         <Fragment>
             <div className="container-fluid">
-                <FilterStore />
+                <div className="filter-container">
+                    <FilterStore />
+                </div>
             </div>
             <ListStore />    
         </Fragment>

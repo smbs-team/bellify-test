@@ -9,6 +9,11 @@ import thumb_2 from '../../assets/images/Products/product_1_3.png';
 import relatedItem from '../../assets/images/items/item.png';
 import items from '../../data/dummy-items';
 
+import ItemImage2 from '../../assets/images/items/item2.png';
+import ItemImage3 from '../../assets/images/items/item3.png';
+import ItemImage4 from '../../assets/images/items/item4.png';
+
+
 class DetailProduct extends PureComponent {
 
     constructor(props) {
@@ -53,13 +58,13 @@ class DetailProduct extends PureComponent {
                             <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                         <div className="col-md-3">
-                            <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
+                            <StoreItem fileName={ItemImage2} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                         <div className="col-md-3">
-                            <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
+                            <StoreItem fileName={ItemImage3} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                         <div className="col-md-3">
-                            <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
+                            <StoreItem fileName={ItemImage4} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                     </div>
                 </div>
@@ -70,13 +75,13 @@ class DetailProduct extends PureComponent {
                             <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                         <div className="col-md-3">
-                            <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
+                            <StoreItem fileName={ItemImage2} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                         <div className="col-md-3">
-                            <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
+                            <StoreItem fileName={ItemImage3} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                         <div className="col-md-3">
-                            <StoreItem fileName={relatedItem} title='Lorem Ipsum' price={'25.00 €'} />
+                            <StoreItem fileName={ItemImage4} title='Lorem Ipsum' price={'25.00 €'} />
                         </div>
                     </div>
                 </div>

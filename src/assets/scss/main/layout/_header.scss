@@ -1,5 +1,9 @@
 .Header {
     background-color: $secondary-color;
+    border-bottom: solid 1px #707070;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
     &-btnBooking {
         align-items: center;
         border-radius: 0;
@@ -31,8 +35,11 @@
                 width: auto;
             }
         }
+        .dropdown-menu {
+            top: 57px;
+        }
         .dropdown-menu.dropdown-menu-right.show {
-            background-color: $black;
+            background-color: $secondary-color;
             border-radius: 0;
             margin-left: auto;
             margin-right: auto;
@@ -42,7 +49,7 @@
                 transform: translate(-50%);
             }
             button {
-                background-color: $black;
+                background-color: $secondary-color;
                 color: $white;
                 cursor: pointer;
                 height: 48px;
@@ -50,7 +57,7 @@
                 font-weight: 300;
                 text-align: center;
                 &:hover {
-                    background-color: $primary-color;
+                    background-color: lighten($black, .8);
                 }
             }
         }

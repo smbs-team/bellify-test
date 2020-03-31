@@ -2,11 +2,9 @@ html, body{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
 }
-
 .container {
     max-width: 1660px;
 }
-
 .Main {
     &:before {
         content: "";

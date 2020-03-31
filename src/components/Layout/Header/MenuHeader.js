@@ -67,7 +67,7 @@ const MenuHeader = () => {
 								<Link className="nav-link" to="">Blog</Link>
 							</NavItem>
 						</Nav>
-						<Link className="d-block text-center nav-link">Iniciar Sesión</Link>
+						<Link className="d-block text-center nav-link mr-5">Iniciar Sesión</Link>
 						<Link className="btn btn-purple Header-btnBooking">Reserva</Link>
 						<Nav navbar>
 							<UncontrolledDropdown nav inNavbar>

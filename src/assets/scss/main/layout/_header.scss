@@ -24,11 +24,13 @@
         }
         .nav-item {
             text-align: center;
+            margin-right: 25px;
             min-width: 124px;
         }
         .nav-link {
             color: $white !important;
             font-size: 18px;
+            margin-right: 25px;
             &.icon {
                 display: inline-block;
                 text-align: center;
@@ -66,7 +68,7 @@
         }
     }
     &-logo {
-        margin-left: 105px;
+        margin-left: 85px;
     }
     &-topbar {
         background: $black;
